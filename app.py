@@ -17,7 +17,7 @@ st.image('im1.jpg',use_column_width=True)
 #load data
 @st.cache_data
 def load_pokemon():
-    data = pd.read_csv('pokemon.csv',index_col=0)
+    data = pd.read_csv('Pokemon.csv',index_col=0)
     return data
 
 with st.spinner('Loading Pokemon Data...'):

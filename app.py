@@ -12,12 +12,12 @@ st.set_page_config(
 )
 
 st.sidebar.title('🦕 🦖 🐧 Pokemon App')
-st.image('papp/im1.jpg',use_column_width=True)
+st.image('im1.jpg',use_column_width=True)
 
 #load data
 @st.cache_data
 def load_pokemon():
-    data = pd.read_csv('papp/pokemon.csv',index_col=0)
+    data = pd.read_csv('pokemon.csv',index_col=0)
     return data
 
 with st.spinner('Loading Pokemon Data...'):
